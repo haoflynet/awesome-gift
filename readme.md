@@ -3,4 +3,4 @@
 <http://love.haofly.net>：我很早以前做的，使用SAE的数据库实现了其中部分的动态内容
 ![展示图片](https://github.com/haoflynet/show_LOVE/blob/master/images/show1.jpg)
 <http://angusme.github.io/>：
-![展示图片](https://github.com/haoflynet/show_LOVE/blob/master/images/show2.jpg)
+![展示图片](https://github.com/haoflynet/show_LOVE/blob/master/images/show2.png)
