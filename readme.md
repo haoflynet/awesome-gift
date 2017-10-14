@@ -1,13 +1,43 @@
-# 收集广大程序员show love的网页，程序员表白专用
-以下部分网站可能由于其他原因未联系到作者本人，如有不愿意我的收集，可以立马发送邮件到本人邮箱，我会尽快删除
+# Awesome Gift
 
-<http://love.haofly.net>：我很早以前做的，使用SAE的数据库实现了其中部分的动态内容，当然，现在我已经有女朋友了，留着它只是做纪念而已
-![展示图片](https://github.com/haoflynet/show_LOVE/blob/master/images/show1.jpg)
-<https://github.com/phodal/valentine>: 全栈大神phodal做的一个表白神器，网页端只是一个铺垫，重点还是它的硬件
-![展示图片](https://github.com/haoflynet/show_LOVE/blob/master/images/phodal.png)
-<http://angusme.github.io/>：
-![展示图片](https://github.com/haoflynet/show_LOVE/blob/master/images/show2.png)
-<http://liumeijun.com/>: 这位大神直接为该网页用了一个顶级域名，而且利用地图的方式，十分有创意
-![展示图片](https://github.com/haoflynet/show_LOVE/blob/master/images/show3.png)
-<http://netcan.zzilcc.com/>：[v2ex](https://v2ex.com/t/256107#reply96)上的用户使用的表白程序，据说现在已脱单
-![展示图片](https://github.com/haoflynet/show_LOVE/blob/master/images/show4.png)
+这个仓库主要是收集日常生活中那些美好的礼物以及这些礼物背后的故事，主要面向选择困难症以及不解风情症。有这个想法已经很久了，因为本仓库之前(`haoflynet/show_LOVE`)本身就是一个选择礼物的仓库，只不过当时只收集了一些程序员表白的网页。谈了很多年恋爱了，这次我打算把自己送过的礼物以及我的一些小故事分享出来。请Star、Pull Request或者通过issues给我推荐优秀的礼物或者你们自己的小故事，希望能帮助到其他人。
+
+**说明**
+与其他awesome-list不同，我直接使用emoji来做简单的tag功能，因为emoji能够在网页内进行搜索。
+
+价格表示: 🆓 🙂 😎 💰(由少到多)
+年龄表示: 👶 👦 👧 👨 👩 👴 👵
+性别表示: 🚺 🚹
+
+## 目录
+
+- [程序员专属](#程序员专属)
+- [电子数码](#电子数码)
+- [家居家电](#家居家电)
+- [衣服鞋帽](#衣服鞋帽)
+- [精品饰品](#精品饰品)
+
+## 程序员专属
+
+* [网页](程序员专属/网页.md): 表白，就给她做一个网页吧，如果一个不行就做999个。 🆓👨
+* [键盘](程序员专属/键盘.md): 没错，键盘真的会让那群人高潮。 😎👨
+
+## 电子数码
+
+* [iphone](电子数码/iphone.md): 给果粉最好的礼物。 💰👦👧👨👩👴👵
+* [macbook](电子数码/macbook.md): 设计师和程序员的最佳工作工具。 💰👨👩
+
+## 家居家电
+
+* []()
+
+## 衣服鞋帽
+
+* []()images
+
+## 精品饰品
+
+* [手工纸花](精品饰品/手工纸花): 用心做的花永远不会凋谢。 🙂👧👨
+* [存钱罐](精品饰品/存钱罐): 为了未来一起努力存钱。 🙂👦👧👨👩
+* [愚人节iphone手机盒](精品饰品/愚人节iphone手机盒): 愚人节的时候来一个惊喜。🙂👩
+* [生肖吉祥物](精品饰品/生肖吉祥物): 吉祥物用来祝贺新年再好不过了。🙂👶👦👧👨👩👴👵
