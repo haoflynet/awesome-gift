@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<title>LoveYou</title>
+
+		<link rel="stylesheet" href="css/fullPage-2.5.2/jquery.fullPage.css" />
+		<link rel="stylesheet" href="css/Snowfall-1.7/styles.css"></script>
+		<script src="js/jquery-2.1.3/jquery-2.1.3.min.js" ></script>
+		<script src="js/fullPage-2.5.2/jquery.fullPage.min.js"></script>
+		<script src="js/Snowfall-1.7/snowfall.min.jquery.js"></script>
+		<script src="js/fullPage-2.5.2/jquery.easings.min.js"></script>
+
+		<!--全屏滚动效果-->
+		<script>
+			$(document).ready(function() {
+				$('#fullpage').fullpage({
+					scrollingSpeed: 400,
+
+					afterRender: function(){
+							$(document).snowfall('clear');
+					        $(document).snowfall({
+					            image: "image/huaban.png",
+					            flakeCount:30,
+					            minSize: 5,
+					            maxSize: 22
+					        });
+					},
+
+					afterLoad: function(anchorLink, index){
+						if(index == 1){
+							$(document).snowfall('clear');
+					        $(document).snowfall({
+					            image: "image/huaban.png",
+					            flakeCount:30,
+					            minSize: 5,
+					            maxSize: 22
+					        });
+						}
+						if(index == 2){
+							$(document).snowfall('clear');
+							$(document).snowfall({
+								image: "image/flake.png",
+								flakeCount: 30,
+								minSize: 5,
+								maxSize: 22
+							});
+							
+							$('.sec2').find('div.words').delay(500).animate({
+									left: '+=500px'
+								}, 1500);
+						}
+						if(index == 4){		// 心形
+							$(document).snowfall('clear');
+					        $(document).snowfall({
+					            image: "image/huaban.png",
+					            flakeCount:30,
+					            minSize: 5,
+					            maxSize: 22
+					        });
+						}
+					}
+				});
+			});
+		</script>
+
+
+		<!--内部元素样式-->
+		<style>
+			.words {
+				position: absolute;
+				left: 0;
+				top: 8%;
+				width: 100%;
+				padding-left: 8%;
+				padding-right: 8%;
+				line-height: 20px;
+				font-size: 21px;
+				color: #FFF;
+			}
+
+			.words .left{
+				left: 500px;
+			}
+			.words .right{
+				right: 100px;
+			}
+			.words .bottom{
+				bottom: 100px;
+			}
+			.words .black{
+				color: #000000;
+			}
+
+
+			.fuzzy {
+				-moz-filter: blur(5px);
+		    	-webkit-filter: blur(5px);
+		        -o-filter: blur(5px);
+		        -ms-filter: blur(5px);
+		        filter: blur(5px)
+			}
+
+			.down {
+			    position: absolute;
+			    bottom: 10px;
+			    left: 50%;
+			    width: 30px;
+			    margin-left: -15px;
+			    height: 26px;
+			    -webkit-animation: opa_btm 1.5s ease-in-out;
+			    animation: opa_btm 1.5s ease-in-out
+			}
+			.down samp {
+			    display: inline-block;
+			    width: 30px;
+			    height: 26px;
+			    -moz-animation: start 1.5s infinite ease-in-out;
+			    -webkit-animation: start 1.5s infinite ease-in-out;
+			    -o-animation: start 1.5s infinite ease-in-out;
+			    -ms-animation: start 1.5s infinite ease-in-out;
+			    animation: start 1.5s  infinite ease-in-out;
+			    background: url(http://p3.ucai.cn/static//i3/special/c2/down.gif)center no-repeat
+			}
+
+			@-webkit-keyframes opa_btm{
+				0%, 25%{
+					opacity: 0;
+					-webkit-transform: translate(0, 20px);
+				}
+			}
+			@keyframes opa_btm{
+				0%, 25%{
+					opacity: 0;
+					transform: translate(0, 20px);
+				}
+			}
+			@-webkit-keyframes start {
+				0%, 30%{
+					opacity: 0;
+					-webkit-transform: rotate(180deg) trnaslate(0, -10px)
+				}
+				60%{
+					opacity: 1;
+					-webkit-transform: rotate(180deg) translate(0, 0)
+				}
+				100%{
+					opacity: 0;
+					-webkit-transform: rotate(180deg) translate(0, 5px);
+				}
+			}
+			@keyframes start{
+				0%, 30%{
+					opacity: 0;
+					transform: rotate(180deg) translate(0, -10px)
+				}
+				60%{
+					opacity: 1;
+					transform: rotate(180deg) translate(0, 0)
+				}
+				100%{
+					opacity: 0;
+					transform: rotate(180deg) translate(0, 5px)
+				}
+			}
+
+			img {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				vertical-align: middle;
+			}
+		</style>
+	</head>
+
+	<body>
+		<audio src="music/beautiful.mp3" autoplay="autoplay"></audio>
+		<div id="fullpage">
+			<div class="section sec1">
+				<img class="fuzzy" src="image/meigui.jpg"/>
+				<div class="words">
+					<p>虽然</p>
+					<p>每次说喜欢你的时候</p>
+					<p>你总是拒绝我</p>
+					<p>从未问过你为什么</p>
+					<p>我知道，你是怕我没有用真心</p>
+					<p>连表白都只能用玩笑的语气说出</p>
+					<p>那是年少时的我</P>
+				</div>
+				<div class="down"><samp></samp></div>
+			</div>
+			<div class="section sec2">
+				<img class="fuzzy" src="image/maidou.jpg"/>
+				<div class="words">
+					<p>每次和你聊天</p>
+					<p>我都不知所措</p>
+					<p>在喜欢的人面前</p>
+					<p>我总是有点木讷</p>
+				</div>
+				<div class="down"><samp></samp></div>
+			</div>
+			<div class="section">
+				<img class="" src="image/mao.jpg"/>
+				<div class="words">
+					<p>有人说</p>
+					<p>我是彻底的宅</p>
+					<p>其实</p>
+					<p>我是在用所有的时间</p>
+					<p>去做一个改变世界的梦</p>
+					<p>而我的世界</p>
+					<p>不过就是你的心</p>
+				</div>
+				<div class="down"><samp></samp></div>
+			</div>
+			<div class="section">
+				<img  src="image/xin.jpg" />
+				<div class="words">
+					<div class="black">
+						<p>虽然我现在</p>
+						<p>没车，没房</p>
+						<p>虽然我...</p>
+						<p>确实很矮</p>
+						<p>可我有一颗爱你的心</p>
+						<p>以后，请让我继续为你努力</p>
+					</div>
+				</div>
+				<div class="down"><samp></samp></div>
+			</div>
+			<div class="section">
+				<img class="fuzzy" src="image/lufei1.jpg" />
+				<div class="words">
+					<p>我在等那么一天</p>
+					<p>等我足够优秀</p>
+					<p>足够勇敢的时候</p>
+					<p>坚定地站在你面前</p>
+					<p>那是你从未见过的我</p>>
+				</div>
+				<div class="down"><samp></samp></div>
+			</div>
+			<div class="section">
+				<img class="fuzzy" src="image/yejing.jpg" />
+				<div class="words">
+					<p>一直希望</p>
+					<p>能有一个人陪着我</p>
+					<p>陪我逛街 陪我吃饭</p>
+					<p>陪我看电影 陪我过每一个情人节、刷卡节</p>
+					<p>陪我走过每一段时光</p>
+				</div>
+				<div class="down"><samp></samp></div>
+			</div>
+			<div class="section">
+				<img class="fuzzy" src="image/hangzhou.jpg" />
+				<div class="words">
+					<p>明年</p>
+					<p>我想去你在的城市</p>
+					<p>去看看这些年你一个人欣赏过的风景</p>
+					<p>去走走这些年你一个人散步过的街道</p>
+					<p>去吃吃这些年你一个人品尝过的美食</p>
+				</div>
+				<div class="down"><samp></samp></div>
+			</div>
+			<div class="section">
+				<img class="fuzzy" src="image/jiewen.jpg" />
+				<div class="words">
+					<p>终有一天</p>
+					<p>我会成为一个配得上你的男人</p>
+					<p>这句话</p>
+					<p>我只对你一个人说过</p>
+				</div>
+				<div class="down"><samp></samp></div>
+			</div>
+			<div class="section">
+				<img class="fuzzy" src="image/xingkong.jpg" />
+				<div class="words">
+					<p>虽然我知道</p>
+					<p>你可能还是会笑着拒绝我</p>
+					<p>但是今年，以后</p>
+					<p>我都不会再怯弱了</p>
+					<p>未来的路，让我陪你，可好</p>
+				</div>
+				<div class="down"><samp></samp></div>
+			</div>
+		</div>
+	</body>
+</html>
